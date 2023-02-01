@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 31, 2023 at 11:20 PM
+-- Generation Time: Feb 01, 2023 at 12:10 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.21
 
@@ -150,15 +150,16 @@ CREATE TABLE `peminjaman` (
   `id` int(11) NOT NULL,
   `nama` varchar(11) NOT NULL,
   `buku_id` int(11) NOT NULL,
-  `tanggal_kembali` date NOT NULL
+  `tanggal_kembali` date NOT NULL,
+  `status` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `peminjaman`
 --
 
-INSERT INTO `peminjaman` (`id`, `nama`, `buku_id`, `tanggal_kembali`) VALUES
-(1, 'Dipta', 1, '2023-01-20');
+INSERT INTO `peminjaman` (`id`, `nama`, `buku_id`, `tanggal_kembali`, `status`) VALUES
+(1, 'Dipta', 1, '2023-01-20', 0);
 
 -- --------------------------------------------------------
 
