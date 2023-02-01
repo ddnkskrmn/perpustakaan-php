@@ -10,7 +10,7 @@
         <th width="150">Action</th>
     </tr>
     <?php
-    $query = mysqli_query($connection, "SELECT * FROM `buku` LIMIT 0, 20");
+    $query = mysqli_query($connection, "SELECT * FROM `buku`");
     while ($model = mysqli_fetch_object($query)) :
     ?>
         <tr>
