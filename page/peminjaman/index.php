@@ -15,7 +15,12 @@
             <td><?= $model->buku_id ?></td>
             <td><?= $model->tanggal_kembali ?></td>
             <td>
-                <a href="index.php?page=buku/edit.php&id=<?= $model->id ?>" class="btn btn-sm btn-primary">Edit</a>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Aktif</option>
+                    <option>Dikembalikan</option>
+                </select>
+            </td>
+            <td>
                 <a href="index.php?page=peminjaman/hapus.php&id=<?= $model->id ?>" onclick="return confirm('Hapus data ini?')" class="btn btn-sm btn-danger">Hapus</a>
             </td>
         </tr>

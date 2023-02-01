@@ -20,11 +20,22 @@ include("./config/database.php");
                             <input type="date" class="form-control">
                         </div>
                     </div>
-                    Buku
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option></option>
-                    </select>
-                    &nbsp;
+                    <div class="row">
+                        <div class="col-9">
+                            Buku
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            Status
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Aktif</option>
+                                <option>Dikembalikan</option>
+                            </select>
+                        </div>
+                        &nbsp;
+                    </div>
                 </div>
                 <div class="row">
                     <div class="form-group">
