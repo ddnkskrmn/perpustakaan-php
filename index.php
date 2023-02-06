@@ -12,6 +12,7 @@ if (isset($_POST['username'])) {
     } else {
         $_SESSION['username'] = $row['username'];
         $_SESSION['id'] = $row['id'];
+        $_SESSION['role'] = $row['role'];
     }
 }
 

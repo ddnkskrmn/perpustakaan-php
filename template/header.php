@@ -3,7 +3,7 @@
         <h3>eLibrary</h3>
     </a>
 
-    <?php if ($_SESSION["admin"] == $_SESSION["admin"]) : ?>
+    <?php if ($_SESSION["role"] == "admin") : ?>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="index.php" class="nav-link px-2 <?= empty($_GET['page']) ? "link-secondary" : "link-dark" ?>">Home</a></li>
             <li><a href="index.php?page=buku/index.php" class="nav-link px-2 <?= $_GET['page'] == "buku/index.php" ? "link-secondary" : "link-dark" ?>">Buku</a></li>
@@ -13,7 +13,8 @@
     <?php else : ?>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="index.php" class="nav-link px-2 <?= empty($_GET['page']) ? "link-secondary" : "link-dark" ?>">Home</a></li>
-            <li><a href="index.php?page=peminjaman/index-user.php" class="nav-link px-2 <?= $_GET['page'] == "peminjaman/index.php" ? "link-secondary" : "link-dark" ?>">Peminjaman</a></li>
+            <li><a href="index.php?page=peminjaman/tambah-user.php" class="nav-link px-2 <?= $_GET['page'] == "peminjaman/index.php" ? "link-secondary" : "link-dark" ?>">Peminjaman</a></li>
+            <li><a href="index.php?page=peminjaman/index-user.php" class="nav-link px-2 <?= $_GET['page'] == "peminjaman/index.php" ? "link-secondary" : "link-dark" ?>">Histori Peminjaman</a></li>
         </ul>
     <?php endif; ?>
 
