@@ -7,14 +7,10 @@ if (isset($_POST['simpan'])) {
         echo '<div class="alert alert-danger" role="alert">Penambahan data gagal !</div>';
     }
 }
-
-$query = mysqli_query($connection, "SELECT * FROM buku WHERE id = '{$_GET['id']}'");
-$model = mysqli_fetch_object($query);
-
 ?>
 <div class="card">
     <div class="card-header">
-        Edit Buku
+        Tambah Buku
     </div>
     <div class="card-body">
         <form action="" method="post">

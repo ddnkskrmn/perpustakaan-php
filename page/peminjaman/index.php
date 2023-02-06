@@ -7,7 +7,7 @@
         <th>Tanggal Kembali</th>
     </tr>
     <?php
-    $query = mysqli_query($connection, "SELECT * FROM `peminjaman` LIMIT 0, 20");
+    $query = mysqli_query($connection, "SELECT * FROM `peminjaman` LIMIT 0,20");
     while ($model = mysqli_fetch_object($query)) :
     ?>
         <tr>

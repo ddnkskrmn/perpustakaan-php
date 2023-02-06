@@ -13,7 +13,7 @@
     <?php else : ?>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="index.php" class="nav-link px-2 <?= empty($_GET['page']) ? "link-secondary" : "link-dark" ?>">Home</a></li>
-            <li><a href="index.php?page=peminjaman/index.php" class="nav-link px-2 <?= $_GET['page'] == "peminjaman/index.php" ? "link-secondary" : "link-dark" ?>">Peminjaman</a></li>
+            <li><a href="index.php?page=peminjaman/index-user.php" class="nav-link px-2 <?= $_GET['page'] == "peminjaman/index.php" ? "link-secondary" : "link-dark" ?>">Peminjaman</a></li>
         </ul>
     <?php endif; ?>
 
